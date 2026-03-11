@@ -13,7 +13,7 @@ export function Work() {
   return (
     <section
       id="projects"
-      className="bg-[var(--primary)] rounded-[var(--rounded)] overflow-hidden p-6 flex flex-col gap-6"
+      className="bg-[var(--primary)] rounded-[var(--rounded)] overflow-hidden p-6 flex flex-col gap-6 h-full min-h-[726px] md:min-h-0"
     >
       {PROJECTS.map((project, i) => (
         <div key={project.slug}>

@@ -12,19 +12,19 @@ export default function Home() {
       <div className="mx-auto max-w-[1440px] px-4 py-6 md:px-6">
         <Header />
 
-        <div className="mt-6 grid grid-cols-1 gap-4 md:grid-cols-12 md:gap-6">
-          {/* Row 1: Hero, Portrait, Work */}
-          <div className="md:col-span-5">
+        <div className="mt-6 grid grid-cols-1 gap-4 md:grid-cols-12 md:grid-rows-[726px_auto] md:gap-4">
+          {/* Row 1: Hero, Portrait, Work — same height as Work card (726px) */}
+          <div className="md:col-span-5 md:h-full md:min-h-0">
             <SloganIntro />
           </div>
-          <div className="md:col-span-4 flex items-start justify-center">
+          <div className="md:col-span-4 md:h-full md:min-h-0 flex">
             <Portrait />
           </div>
-          <div className="md:col-span-3 min-h-[400px] md:min-h-[726px]">
+          <div className="md:col-span-3 md:h-full md:min-h-0">
             <Work />
           </div>
 
-          {/* Row 2: About, Contact, Socials */}
+          {/* Row 2: About, Contact, Socials — tighter spacing to match design */}
           <div className="md:col-span-5">
             <About />
           </div>

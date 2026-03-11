@@ -3,7 +3,7 @@ import { ASSETS } from "@/lib/constants";
 
 export function Portrait() {
   return (
-    <section className="rounded-[var(--rounded)] overflow-hidden relative w-full aspect-[330/476] max-h-[476px] bg-[var(--primary)]">
+    <section className="rounded-[var(--rounded)] overflow-hidden relative w-full min-h-[320px] aspect-[330/476] md:aspect-auto md:max-h-none md:h-full md:min-h-0 bg-[var(--primary)]">
       <Image
         src={ASSETS.portrait}
         alt="Julia Huang"

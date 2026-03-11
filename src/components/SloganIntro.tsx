@@ -3,7 +3,7 @@ import { ASSETS } from "@/lib/constants";
 
 export function SloganIntro() {
   return (
-    <section className="bg-[var(--primary)] rounded-[var(--rounded)] overflow-hidden relative p-6 flex flex-col justify-center min-h-[420px] md:min-h-[480px]">
+    <section className="bg-[var(--primary)] rounded-[var(--rounded)] overflow-hidden relative p-6 flex flex-col justify-center min-h-[420px] md:min-h-[480px] md:h-full md:min-h-0">
       <div className="absolute right-10 top-8 w-[119px] h-[119px]">
         <Image
           src={ASSETS.flowerIcon}
